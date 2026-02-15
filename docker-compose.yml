@@ -1,0 +1,47 @@
+name: 'duckflix'
+services:
+    postgres:
+        image: postgres:16-alpine
+        container_name: duckflix_db
+        restart: always
+        environment:
+            POSTGRES_USER: duck_admin
+            POSTGRES_PASSWORD: duck_admin
+            POSTGRES_DB: duckflix_db
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        ports:
+            - '5432:5432'
+
+    backend:
+        container_name: 'duckflix_backend'
+        build:
+            context: .
+            dockerfile: packages/backend/Dockerfile
+        restart: always
+        init: true
+        tty: true
+        depends_on:
+            - postgres
+        ports:
+            - '3000:3000'
+        env_file:
+            - packages/backend/.docker.env
+        volumes:
+            - ./data:/app/data
+        logging:
+            driver: 'json-file'
+            options:
+                max-size: '10m'
+                max-file: '3'
+    frontend:
+        container_name: duckflix_frontend
+        build:
+            context: .
+            dockerfile: packages/frontend/Dockerfile
+        restart: always
+        ports:
+            - '5173:80'
+
+volumes:
+    postgres_data:
