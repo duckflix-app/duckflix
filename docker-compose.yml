@@ -35,6 +35,24 @@ services:
             timeout: 5s
             retries: 5
 
+    rqbit:
+        image: ikatson/rqbit:latest
+        container_name: duckflix_rqbit
+        restart: always
+
+        ports:
+            - '3030:3030' # API Port
+            - '6881:6881/tcp' # Torrent portovi
+            - '6881:6881/udp'
+        environment:
+            - RQBIT_HTTP_LISTEN_ADDR=0.0.0.0:3030
+        volumes:
+            - rqbit_db:/home/rqbit/db
+            - rqbit_cache:/home/rqbit/cache
+            - ./data/temp/downloads:/home/rqbit/downloads
+        networks:
+            - duckflix_network
+
     backend:
         container_name: 'duckflix_backend'
         build:
@@ -77,3 +95,5 @@ networks:
 volumes:
     postgres_data:
     redis_data:
+    rqbit_db:
+    rqbit_cache:
