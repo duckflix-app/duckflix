@@ -5,9 +5,9 @@ services:
         container_name: duckflix_db
         restart: always
         environment:
-            POSTGRES_USER: duck_admin
-            POSTGRES_PASSWORD: duck_admin
-            POSTGRES_DB: duckflix_db
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PSWD}
+            POSTGRES_DB: ${POSTGRES_DB}
         volumes:
             - postgres_data:/var/lib/postgresql/data
         ports:
@@ -27,6 +27,8 @@ services:
             - '3000:3000'
         env_file:
             - packages/backend/.docker.env
+        environment:
+            - NODE_ENV=production
         volumes:
             - ./data:/app/data
         logging:
