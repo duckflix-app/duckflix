@@ -1,19 +1,13 @@
 SYSTEM
 
-- Seeking on keyboard(canceled reqs)
 - Used/Free space
 - Library
-- progress event on movie for new tasks
 - Dont allow same movies to be uploaded twice?
 
 WATCH
 
-- Subtitles
+- Seeking on keyboard(canceled reqs)?
 - Cast?
-
-SEARCH
-
-- Filters
 
 LIBRARY
 
@@ -24,6 +18,10 @@ DETAILS
 
 - Settings to add versions
 - Error
+
+SEARCH
+
+- Filters
 
 ADMIN
 

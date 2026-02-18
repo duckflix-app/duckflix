@@ -7,6 +7,14 @@ export interface GenreDTO {
     name: string;
 }
 
+export interface SubtitleDTO {
+    id: string;
+    movieId: string;
+    language: string;
+    subtitleUrl: string;
+    createdAt: string;
+}
+
 export interface MovieVersionDTO {
     id: string;
     height: number;
@@ -35,4 +43,5 @@ export interface MovieDetailedDTO extends MovieDTO {
     description: string | null;
     user: UserMinDTO;
     versions: MovieVersionDTO[];
+    subtitles: SubtitleDTO[];
 }
