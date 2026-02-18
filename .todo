@@ -1,15 +1,12 @@
 SYSTEM
 
 - Optimize FFMPEG processing
-- Check if torrent is deleting .torrent file correctly on error
 - Library
 
 WATCH
 
-- Seeking
-- Volume seeking
 - Subtitles
-- Cast
+- Cast?
 
 SEARCH
 
@@ -22,9 +19,16 @@ LIBRARY
 
 DETAILS
 
-- Processing, Error
+- Settings to add versions
+- Error
 
 NOTIFICATIONS
 
 - clear
 - read
+
+ADMIN
+
+- Storage Statistics
+- Manage Downloads
+- Manage Processes

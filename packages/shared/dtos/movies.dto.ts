@@ -1,6 +1,6 @@
 import type { UserMinDTO } from './user.dto';
 
-export type MovieStatus = 'processing' | 'ready' | 'error' | 'waiting';
+export type MovieStatus = 'downloading' | 'processing' | 'ready' | 'error' | 'waiting';
 
 export interface GenreDTO {
     id: string;
