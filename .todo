@@ -2,8 +2,9 @@ SYSTEM
 
 - Seeking on keyboard(canceled reqs)
 - Used/Free space
-- Optimize FFMPEG processing
 - Library
+- progress event on movie for new tasks
+- Dont allow same movies to be uploaded twice?
 
 WATCH
 
@@ -23,11 +24,6 @@ DETAILS
 
 - Settings to add versions
 - Error
-
-NOTIFICATIONS
-
-- clear
-- read
 
 ADMIN
 
