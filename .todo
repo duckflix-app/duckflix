@@ -6,6 +6,7 @@ SYSTEM
 
 WATCH
 
+- If controll button is focused, on ' '(space) keyboard event it would trigger 2 actions at once
 - Seeking on keyboard(canceled reqs)?
 - Cast?
 
