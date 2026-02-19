@@ -8,4 +8,5 @@ export interface UserDTO {
 export interface UserMinDTO {
     id: string;
     name: string;
+    role: 'watcher' | 'contributor' | 'admin';
 }
