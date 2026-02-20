@@ -16,6 +16,8 @@
     "license": "MIT",
     "private": true,
     "scripts": {
+        "dev:back": "bun --filter @duckflix/backend dev",
+        "dev:front": "bun --filter @duckflix/frontend dev",
         "lint": "eslint . --ext .ts",
         "format": "prettier --write ."
     },

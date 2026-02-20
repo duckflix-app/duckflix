@@ -3,6 +3,9 @@ storage/
 temp/
 data/
 
+# certs
+certs/
+
 # dependencies (bun install)
 node_modules
 
