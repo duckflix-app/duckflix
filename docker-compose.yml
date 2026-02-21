@@ -57,6 +57,7 @@ services:
             - NODE_ENV=production
         volumes:
             - ./data:/app/data
+            - ./logs:/app/logs
             - ./certs:/app/certs:ro
         networks:
             - duckflix_network
