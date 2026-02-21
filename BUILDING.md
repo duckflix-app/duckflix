@@ -10,7 +10,7 @@ If you plan to run the source code locally (outside of Docker), ensure you have 
 
 - **Bun**: [https://bun.sh/](https://bun.sh/)
 - **PostgreSQL**: [https://www.postgresql.org/](https://www.postgresql.org/)
-- **rqbit** (Desktop or Server): [https://github.com/ikatson/rqbit](https://github.com/ikatson/rqbit)
+- **rqbit**: [https://github.com/ikatson/rqbit](https://github.com/ikatson/rqbit)
 
 ### Containerized Environment
 
@@ -84,8 +84,10 @@ Push the schema to your local Postgres instance:
 
 ```bash
 cd packages/backend
-bun run db:push
+bun db:push
 ```
+
+> **Note:** This is automatically done in `prestart` script on backend
 
 ### Step 3: Run Applications
 
@@ -108,8 +110,7 @@ bun dev:front
 If you want to view or edit your data through a GUI, you can start Drizzle Studio:
 
 ```bash
-cd packages/backend
-bun run db:studio
+bun db:studio
 ```
 
 Then open https://local.drizzle.studio in your browser.
@@ -125,5 +126,3 @@ Then open https://local.drizzle.studio in your browser.
 - rqbit API: Accessible on http://localhost:3030.
 
 - Database (Postgres): Runs on port 5432.
-
-- Data Storage: Downloads and temporary files are stored in ./data/temp/downloads.
