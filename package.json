@@ -16,10 +16,13 @@
     "license": "MIT",
     "private": true,
     "scripts": {
+        "dev": "bun run dev:back & bun dev:front",
         "dev:back": "bun --filter @duckflix/backend dev",
         "dev:front": "bun --filter @duckflix/frontend dev",
+        "db:studio": "bun --filter @duckflix/backend db:studio",
         "lint": "eslint . --ext .ts",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "typecheck": "bun --filter @duckflix/backend typecheck"
     },
     "type": "module",
     "workspaces": [
