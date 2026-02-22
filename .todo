@@ -1,5 +1,7 @@
 SYSTEM
 
+- USER LIBRARY
+- TMDB details without parsing URL
 - Login ratelimit/account block
 - Kill process request
 - Pause process
@@ -8,12 +10,7 @@ SYSTEM
 - Dont allow same movies to be uploaded twice?
 - Scan custom folder for new movies
 - Enable/Disable registration
-
-WATCH
-
-- If controll button is focused, on ' '(space) keyboard event it would trigger 2 actions at once
-- Seeking on keyboard(canceled reqs)?
-- Cast?
+- Subtitle search
 
 LIBRARY
 
@@ -35,3 +32,9 @@ ADMIN
 - Storage Statistics
 - Manage Downloads
 - Manage Processes
+
+WATCH
+
+- If controll button is focused, on ' '(space) keyboard event it would trigger 2 actions at once
+- Seeking on keyboard(canceled reqs)?
+- Cast?
