@@ -27,7 +27,7 @@ services:
 
         ports:
             - '3030:3030' # API Port
-            - '6881:6881/tcp' # Torrent portovi
+            - '6881:6881/tcp' # Torrent ports
             - '6881:6881/udp'
         environment:
             - RQBIT_HTTP_LISTEN_ADDR=0.0.0.0:3030
