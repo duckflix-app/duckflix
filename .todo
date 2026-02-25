@@ -30,11 +30,11 @@ SEARCH
 ADMIN
 
 - Storage Statistics
-- Manage Downloads
+- Manage Downloads -> torrent downloads and seeding
 - Manage Processes
 
 WATCH
 
 - If controll button is focused, on ' '(space) keyboard event it would trigger 2 actions at once
 - Seeking on keyboard(canceled reqs)?
-- Cast?
+- Cast -> local subtitles, sync media controlls
