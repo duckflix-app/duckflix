@@ -1,12 +1,10 @@
 SYSTEM
 
+- Fix task pause and Pause task on new if pause ref is > 0
+- Handle zombie process from database and not finished ffmpegs on initialize(recovery system)
 - USER LIBRARY
 - TMDB details without parsing URL
 - Login ratelimit/account block
-- Kill process request
-- Pause process
-- m3u8 HLS
-- TaskHandler prioritization -> pause all current task while live transcode-ing
 - Dont allow same movies to be uploaded twice?
 - Scan custom folder for new movies
 - Enable/Disable registration
