@@ -59,6 +59,8 @@ services:
             - ./data:/app/data
             - ./logs:/app/logs
             - ./certs:/app/certs:ro
+        tmpfs:
+            - /app/data/live:size=4G,mode=1777
         networks:
             - duckflix_network
         logging:
