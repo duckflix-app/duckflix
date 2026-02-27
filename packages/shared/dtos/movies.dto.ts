@@ -26,7 +26,7 @@ export interface MovieVersionDTO {
     isOriginal: boolean;
 }
 
-export interface MovieDTO {
+export interface MovieMinDTO {
     id: string;
     title: string;
     bannerUrl: string | null;
@@ -34,14 +34,17 @@ export interface MovieDTO {
     rating: string | null;
     releaseYear: number | null;
     duration: number | null;
-    genres: GenreDTO[];
     status: MovieStatus;
     createdAt: string;
 }
 
+export interface MovieDTO extends MovieMinDTO {
+    genres: GenreDTO[];
+}
+
 export interface MovieDetailedDTO extends MovieDTO {
     description: string | null;
-    user: UserMinDTO;
+    uploader: UserMinDTO | null;
     versions: MovieVersionDTO[];
     subtitles: SubtitleDTO[];
 }

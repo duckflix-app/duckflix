@@ -2,7 +2,6 @@ SYSTEM
 
 - Fix task pause and Pause task on new if pause ref is > 0
 - Handle zombie process from database and not finished ffmpegs on initialize(recovery system)
-- USER LIBRARY
 - TMDB details without parsing URL
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
@@ -13,7 +12,7 @@ SYSTEM
 LIBRARY
 
 - UI
-- Add to Library
+- Add pagination on items
 
 DETAILS
 

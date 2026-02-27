@@ -22,7 +22,7 @@
         "db:studio": "bun --filter @duckflix/backend db:studio",
         "lint": "eslint . --ext .ts",
         "format": "prettier --write .",
-        "typecheck": "bun --filter @duckflix/backend typecheck"
+        "typecheck": "bun --filter @duckflix/backend typecheck && bun --filter @duckflix/frontend typecheck"
     },
     "type": "module",
     "workspaces": [
