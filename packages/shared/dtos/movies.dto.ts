@@ -46,6 +46,7 @@ export interface MovieDetailedDTO extends MovieDTO {
     description: string | null;
     uploader: UserMinDTO | null;
     versions: MovieVersionDTO[];
+    generatedVersions: MovieVersionDTO[] | null;
     subtitles: SubtitleDTO[];
     inUserLibrary: boolean | null;
 }
