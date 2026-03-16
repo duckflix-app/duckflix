@@ -1,4 +1,6 @@
-export type UserRole = 'admin' | 'contributor' | 'watcher';
+import type { UserRole } from '../configs/roles';
+
+export type { UserRole };
 
 export interface UserMinDTO {
     id: string;

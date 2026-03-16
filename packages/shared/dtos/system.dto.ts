@@ -4,7 +4,10 @@ export interface SystemSettingsDTO {
     features: {
         autoTranscoding: TranscodeType;
         concurrentProcessing: number;
-        trustEmails: boolean;
+        registration: {
+            enabled: boolean;
+            trustEmails: boolean;
+        };
     };
     preferences: {
         subtitles: { lang: string; variants: number }[];
