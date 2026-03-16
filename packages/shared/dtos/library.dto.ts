@@ -1,7 +1,7 @@
 import type { MovieMinDTO } from './movies.dto';
 import type { UserMinDTO } from './user.dto';
 
-export type LibraryType = 'watchlist' | 'library' | 'custom';
+export type LibraryType = 'watchlist' | 'custom';
 
 export interface LibraryMinDTO {
     id: string;
