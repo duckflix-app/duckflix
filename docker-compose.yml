@@ -68,6 +68,17 @@ services:
             options:
                 max-size: '10m'
                 max-file: '3'
+        # Hardware acceleration (optional)
+        # Nvidia (NVENC)
+        # Requires: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
+        # deploy:
+        #     resources:
+        #         reservations:
+        #             devices:
+        #                 - driver: nvidia
+        #                   count: 1
+        #                   capabilities: [gpu]
+
     frontend:
         container_name: duckflix_frontend
         build:
