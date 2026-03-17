@@ -6,17 +6,15 @@ SYSTEM
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
 - Scan custom folder for new movies
-- Enable/Disable registration
-- Subtitle search
-
-LIBRARY
-
-- Create/Delete custom UI
+- Subtitles from hvec
 
 DETAILS
 
-- Settings to add versions
-- Error
+- Settings to add/remove versions
+- Edit metadata
+- Delete
+- Subtitle search
+- Error Page
 
 ADMIN
 
@@ -29,6 +27,6 @@ WATCH
 - Seeking on keyboard(canceled reqs)?
 - Cast -> local subtitles, sync media controlls
 
-BROWSE
+LIBRARY
 
-- Specific endpoint or something for hero movie with details so we can check if there are versions and playable
+- Custom libraries
