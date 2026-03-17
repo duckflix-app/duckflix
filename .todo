@@ -7,12 +7,11 @@ SYSTEM
 - Dont allow same movies to be uploaded twice?
 - Scan custom folder for new movies
 - Subtitles from hvec
+- Notification on download start so user can open movie if not opened correctly
 
 DETAILS
 
-- Settings to add/remove versions
-- Edit metadata
-- Delete
+- Add metada with dbURL
 - Subtitle search
 - Error Page
 
