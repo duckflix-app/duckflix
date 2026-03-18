@@ -2,10 +2,9 @@ SYSTEM
 
 - Fix task pause and Pause task on new if pause ref is > 0
 - Handle zombie process from database and not finished ffmpegs on initialize(recovery system)
-- TMDB details without parsing URL
+- TMDB details without parsing URL while uploading?
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
-- Scan custom folder for new movies
 - Subtitles from hvec
 
 DETAILS

@@ -3,6 +3,7 @@ storage/
 temp/
 data/
 live/
+drop/
 
 # certs
 certs/

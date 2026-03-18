@@ -6,6 +6,7 @@ export interface UserMinDTO {
     id: string;
     name: string;
     role: UserRole;
+    system: boolean;
 }
 
 export interface UserDTO extends UserMinDTO {
