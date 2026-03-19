@@ -9,7 +9,6 @@ DETAILS
 
 - Add metada with dbURL
 - Subtitle search
-- Error Page
 
 ADMIN
 
@@ -21,7 +20,3 @@ WATCH
 
 - Seeking on keyboard(canceled reqs)?
 - Cast -> local subtitles, sync media controlls
-
-LIBRARY
-
-- Custom libraries
