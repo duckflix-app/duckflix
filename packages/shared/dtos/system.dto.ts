@@ -33,3 +33,26 @@ export interface SystemSettingsDTO {
         };
     };
 }
+
+export interface StorageStatisticsDTO {
+    usedBytes: number; // int
+    limitBytes: number; // int
+    availableBytes: number; // int
+    usedPercent: number; // float
+    used: string; // .0 Unit
+    limit: string; // .0 Unit
+    available: string; // .0 Unit
+}
+
+export interface SystemStatisticsDTO {
+    version: string;
+    uptime: number;
+    sessions: {
+        total: number;
+    };
+    tasks: {
+        working: number;
+        queue: number;
+    };
+    storage: StorageStatisticsDTO;
+}

@@ -1,6 +1,6 @@
 SYSTEM
 
-- Fix task pause and Pause task on new if pause ref is > 0
+- Fix task pause and Pause task on new if pause ref is > 0, tasks wont continue after jit ends
 - TMDB details without parsing URL while uploading?
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
@@ -12,7 +12,6 @@ DETAILS
 
 ADMIN
 
-- Storage Statistics
 - Manage Downloads -> torrent downloads and seeding
 - Manage Processes
 
