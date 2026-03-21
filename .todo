@@ -1,6 +1,5 @@
 SYSTEM
 
-- Fix task pause and Pause task on new if pause ref is > 0, tasks wont continue after jit ends
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
 
