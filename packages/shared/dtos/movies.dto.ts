@@ -1,52 +1,27 @@
-import type { UserMinDTO } from './user.dto';
+import type { VideoDTO } from './video.dto';
 
-export type MovieStatus = 'downloading' | 'processing' | 'ready' | 'error' | 'waiting' | 'canceled';
-
-export interface GenreDTO {
+export interface MovieGenreDTO {
     id: string;
     name: string;
 }
 
-export interface SubtitleDTO {
-    id: string;
-    movieId: string;
-    language: string;
-    subtitleUrl: string;
-    createdAt: string;
-}
-
-export interface MovieVersionDTO {
-    id: string;
-    height: number;
-    width: number | null;
-    streamUrl: string;
-    fileSize: number | null;
-    mimeType: string | null;
-    status: MovieStatus;
-    isOriginal: boolean;
-}
-
 export interface MovieMinDTO {
     id: string;
+    videoId: string;
     title: string;
     bannerUrl: string | null;
     posterUrl: string | null;
     rating: string | null;
     releaseYear: number | null;
     duration: number | null;
-    status: MovieStatus;
-    createdAt: string;
 }
 
 export interface MovieDTO extends MovieMinDTO {
-    genres: GenreDTO[];
+    overview: string | null;
+    video: VideoDTO;
+    genres: MovieGenreDTO[];
 }
 
 export interface MovieDetailedDTO extends MovieDTO {
-    description: string | null;
-    uploader: UserMinDTO | null;
-    versions: MovieVersionDTO[];
-    generatedVersions: MovieVersionDTO[] | null;
-    subtitles: SubtitleDTO[];
     inUserLibrary: boolean | null;
 }
