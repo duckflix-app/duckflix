@@ -39,5 +39,6 @@ export interface SubtitleDTO {
 
 export interface VideoResolved {
     type: 'movie';
-    contentId: string;
+    id: string;
+    name: string;
 }
