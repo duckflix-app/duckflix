@@ -36,3 +36,8 @@ export interface SubtitleDTO {
     subtitleUrl: string;
     createdAt: string;
 }
+
+export interface VideoResolved {
+    type: 'movie';
+    contentId: string;
+}
