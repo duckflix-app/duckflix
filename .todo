@@ -3,6 +3,8 @@ SYSTEM
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
 - Upload for multiple video files in torrent?
+- Session authentication in media endpoint queries
+- Update library items count on cascade(reference) delete
 
 DETAILS
 
