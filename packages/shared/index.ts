@@ -6,4 +6,5 @@ export * from './dtos/library.dto';
 export * from './dtos/notification.dto';
 export * from './dtos/socket.dto';
 export * from './dtos/system.dto';
+export * from './dtos/series.dto';
 export * from './configs/roles';
