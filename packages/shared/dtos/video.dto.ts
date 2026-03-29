@@ -2,7 +2,7 @@ import type { UserMinDTO } from './user.dto';
 
 export const VIDEO_VERSION_STATUSES = ['processing', 'ready', 'error', 'waiting', 'canceled'] as const;
 export const VIDEO_STATUSES = ['downloading', 'processing', 'ready', 'error'] as const;
-export const VIDEO_TYPES = ['movie'] as const;
+export const VIDEO_TYPES = ['movie', 'episode'] as const;
 
 export type VideoVersionStatus = (typeof VIDEO_VERSION_STATUSES)[number];
 export type VideoStatus = (typeof VIDEO_STATUSES)[number];
