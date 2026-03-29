@@ -1,13 +1,19 @@
 import type { UserMinDTO } from './user.dto';
 
-export type VideoVersionStatus = 'processing' | 'ready' | 'error' | 'waiting' | 'canceled';
-export type VideoStatus = 'downloading' | 'processing' | 'ready' | 'error';
+export const VIDEO_VERSION_STATUSES = ['processing', 'ready', 'error', 'waiting', 'canceled'] as const;
+export const VIDEO_STATUSES = ['downloading', 'processing', 'ready', 'error'] as const;
+export const VIDEO_TYPES = ['movie'] as const;
+
+export type VideoVersionStatus = (typeof VIDEO_VERSION_STATUSES)[number];
+export type VideoStatus = (typeof VIDEO_STATUSES)[number];
+export type VideoType = (typeof VIDEO_TYPES)[number];
 
 export interface VideoMinDTO {
     id: string;
     uploaderId: string | null;
     duration: number | null;
     status: VideoStatus;
+    type: VideoType;
     createdAt: string;
 }
 
@@ -38,7 +44,7 @@ export interface SubtitleDTO {
 }
 
 export interface VideoResolved {
-    type: 'movie';
+    type: VideoType;
     id: string;
     name: string;
 }

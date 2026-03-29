@@ -2,6 +2,7 @@ SYSTEM
 
 - Login ratelimit/account block
 - Dont allow same movies to be uploaded twice?
+- Upload for multiple video files in torrent?
 
 DETAILS
 
@@ -17,6 +18,7 @@ WATCH
 
 - Seeking on keyboard(canceled reqs)?
 - Cast -> local subtitles, sync media controlls
+- Subtitle opacity
 
 User
 
