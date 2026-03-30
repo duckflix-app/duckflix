@@ -54,7 +54,7 @@ export interface SeriesDTO extends SeriesMinDTO {
 }
 
 export interface SeriesDetailedDTO extends SeriesDTO {
-    imdbId: string | null;
+    tmdbId: string | null;
     lastAirDate: string | null;
     inUserLibrary: boolean | null;
 }
