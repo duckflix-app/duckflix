@@ -5,6 +5,7 @@ SYSTEM
 - Upload for multiple video files in torrent?
 - Session authentication in media endpoint queries
 - Update library items count on cascade(reference) delete
+- Decide if movie should require tmdbId or not?
 
 DETAILS
 
