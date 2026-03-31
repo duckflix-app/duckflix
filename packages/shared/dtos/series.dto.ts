@@ -15,6 +15,7 @@ export interface EpisodeMinDTO {
 export interface EpisodeDTO extends EpisodeMinDTO {
     overview: string | null;
     video: VideoDTO | null;
+    season: SeasonMinDTO;
 }
 
 export interface SeasonMinDTO {
@@ -29,6 +30,7 @@ export interface SeasonMinDTO {
 
 export interface SeasonDTO extends SeasonMinDTO {
     overview: string | null;
+    series: SeriesMinDTO;
     episodes: EpisodeMinDTO[];
 }
 
