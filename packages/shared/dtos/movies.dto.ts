@@ -14,10 +14,10 @@ export interface MovieMinDTO {
     posterUrl: string | null;
     rating: string | null;
     releaseYear: number | null;
+    runtime: number | null;
 }
 
 export interface MovieDTO extends MovieMinDTO {
-    duration: number | null;
     video: VideoDTO;
     genres: MovieGenreDTO[];
 }
