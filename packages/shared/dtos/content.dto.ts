@@ -4,7 +4,8 @@ export const SORT_ORDER_VALUES = ['asc', 'desc'] as const;
 export type SortValue = (typeof SORT_VALUES)[number];
 export type SortOrder = (typeof SORT_ORDER_VALUES)[number];
 
-export interface SearchResultDTO {
+// shared types
+export interface ContentDTO {
     type: 'movie' | 'series';
     id: string;
     title: string;

@@ -1,4 +1,4 @@
-import type { MovieMinDTO } from './movies.dto';
+import type { ContentDTO } from './content.dto';
 import type { UserMinDTO } from './user.dto';
 
 export type LibraryType = 'watchlist' | 'custom';
@@ -17,10 +17,11 @@ export interface LibraryDTO extends LibraryMinDTO {
 }
 
 export interface LibraryItemMinDTO {
+    id: string;
     libraryId: string;
-    movieId: string;
+    addedAt: string;
 }
 
 export interface LibraryItemDTO extends LibraryItemMinDTO {
-    movie: MovieMinDTO;
+    content: ContentDTO;
 }
